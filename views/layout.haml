@@ -1,0 +1,11 @@
+%html
+  %head
+    %title= Ltestudio
+    %link{ rel: "stylesheet", href: "/css/main.css" }
+  %body
+    #container
+      %header
+        %h1 Ltestudio
+      %nav
+      %section.content= yield
+    %script{ type: "text/javascript", src: "/js/app.js" }
