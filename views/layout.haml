@@ -12,11 +12,12 @@
             %img{src: "/images/logo.png"}
       %nav
         %a{ href: "/" }         Home
-        %a{ href: "/t-shirt" }  T-shirt
+        %a{ href: "/t-shirts" } T-shirt
         %a{ href: "/works" }    Works
         / %a{ href: "/shop" }     Shop
         %a{ href: "/contatti" } Contatti
         
       %section.content= yield
       
-    %script{ type: "text/javascript", src: "/js/app.js" }  
+    %script{ type: "text/javascript", src: "/js/vendor/underscore.js" }
+    %script{ type: "text/javascript", src: "/js/app.js" }    

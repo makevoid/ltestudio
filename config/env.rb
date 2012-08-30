@@ -18,4 +18,5 @@ DataMapper.setup :default, adapter: "in_memory"
 require_all "#{path}/models"
 DataMapper.finalize
 
+require "#{path}/lib/mhash"
 require "#{path}/config/shirts.rb"

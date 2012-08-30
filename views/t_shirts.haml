@@ -2,10 +2,10 @@
 
 - DESIGNS.each do |design|
   .design
-    - link = "/t-shirts/#{design}"
+    - link = "/t-shirts/#{design.file}"
   
     %a{ href: link }
-      %img{ src: "/images/designs/#{design}.png" }
+      %img{ src: "/images/designs/#{design.file}.png" }
     %p
       %a{ href: link }
-        = design.capitalize
+        = design.name.capitalize

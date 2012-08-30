@@ -1,0 +1,11 @@
+%h1 Works
+
+- WORKS.each do |work|
+  .work
+    - link = "/works/#{work.file}"
+  
+    %a{ href: link }
+      %img{ src: "/images/works/#{work.file}.png" }
+    %p
+      %a{ href: link }
+        = work.name.capitalize

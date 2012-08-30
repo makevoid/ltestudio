@@ -11,6 +11,9 @@ ul
 a 
   text-decoration: none
   border: 0
+  
+.clear
+  clear: both
 
 // variabili
 
@@ -59,16 +62,41 @@ nav
     
     
 // pagina home
+
+#img_gal 
+  height: 600px
+  position: relative
+  img
+    width: 100%
+    float: left
+    position: absolute
+    -webkit-transition-property: opacity
+    -webkit-transition-duration: 1s
+    -webkit-transition-timing-function: ease-in-out
+    -moz-transition-property: opacity
+    -moz-transition-duration: 1s
+    -moz-transition-timing-function: ease-in-out
+    opacity: 0
+  img:first-child
+    opacity: 1
  
 
-// pagina lista designs
+// pagina liste designs/lavori
 
-.design
+.design, .work
   display: inline-block
-  width: 29%
-  margin: 0 10% 0 0
+  width: 26%
+  margin: 0 2% 30px 0
+  p
+    margin-top: 10px
+  img
+    width: 100%
 
-// pagina singola t-shirt
+// pagina singola t-shirt/work
+
+.single
+  img
+    width: 100%
  
  
 // pagina contatti

@@ -10,6 +10,9 @@ a {
   text-decoration: none;
   border: 0; }
 
+.clear {
+  clear: both; }
+
 body {
   padding: 0;
   margin: 0;
@@ -47,10 +50,34 @@ nav {
   .content h1 {
     margin: 0 0 10px 0; }
 
-.design {
+#img_gal {
+  height: 600px;
+  position: relative; }
+  #img_gal img {
+    width: 100%;
+    float: left;
+    position: absolute;
+    -webkit-transition-property: opacity;
+    -webkit-transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-property: opacity;
+    -moz-transition-duration: 1s;
+    -moz-transition-timing-function: ease-in-out;
+    opacity: 0; }
+  #img_gal img:first-child {
+    opacity: 1; }
+
+.design, .work {
   display: inline-block;
-  width: 29%;
-  margin: 0 10% 0 0; }
+  width: 26%;
+  margin: 0 2% 30px 0; }
+  .design p, .work p {
+    margin-top: 10px; }
+  .design img, .work img {
+    width: 100%; }
+
+.single img {
+  width: 100%; }
 
 #map_canvas {
   margin: 20px 0 0 0;
