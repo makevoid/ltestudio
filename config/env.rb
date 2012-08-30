@@ -14,5 +14,8 @@ include Utils
 
 env = ENV["RACK_ENV"] || "development"
 # DataMapper.setup :default, "mysql://localhost/ltestudio_#{env}"
+DataMapper.setup :default, adapter: "in_memory"
 require_all "#{path}/models"
-# DataMapper.finalize
+DataMapper.finalize
+
+require "#{path}/config/shirts.rb"

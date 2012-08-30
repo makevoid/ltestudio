@@ -1,2 +1,79 @@
+// reset css
+
+* 
+  padding: 0 
+  margin: 0
+  box-sizing: none
+
+ul 
+  list-style-type: none
+
+a 
+  text-decoration: none
+  border: 0
+
+// variabili
+
+$stile_bordi: 3px dotted #777
+
+// stile generico
+
 body
-  background: #EEE
+  padding: 0 
+  margin: 0
+  background: #BBB url(/images/bg.png) repeat-x
+  font-family: Helvetica, Verdana, Arial
+
+a
+  color: #222
+  font-weight: bold
+a:hover
+  color: #777
+  text-shadow: 1px -1px 0px #000
+
+
+// stile layout
+  
+header h1   
+  margin: 30px auto 20px auto
+  border-bottom: $stile_bordi
+  img
+    margin: 30px auto 20px auto
+    display: block
+    width: 150px
+  
+nav 
+  text-align: center
+  a
+    font-size: 1.4em
+    margin: 1%
+
+.content
+  width: 85%
+  margin: 40px auto 30px auto
+  border: $stile_bordi
+  padding: 1.5% 2% 3% 2%
+  border-radius: 12px
+  h1
+    margin: 0 0 10px 0
+    
+    
+// pagina home
+ 
+
+// pagina lista designs
+
+.design
+  display: inline-block
+  width: 29%
+  margin: 0 10% 0 0
+
+// pagina singola t-shirt
+ 
+ 
+// pagina contatti
+
+#map_canvas
+  margin: 20px 0 0 0
+  width: 100%
+  height: 500px

@@ -1,11 +1,22 @@
 %html
   %head
-    %title= Ltestudio
+    %title Lte Studio
     %link{ rel: "stylesheet", href: "/css/main.css" }
+    %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
   %body
     #container
       %header
-        %h1 Ltestudio
+        %h1 
+          %a{ href: "/" }
+            / Ltestudio
+            %img{src: "/images/logo.png"}
       %nav
+        %a{ href: "/" }         Home
+        %a{ href: "/t-shirt" }  T-shirt
+        %a{ href: "/works" }    Works
+        / %a{ href: "/shop" }     Shop
+        %a{ href: "/contatti" } Contatti
+        
       %section.content= yield
-    %script{ type: "text/javascript", src: "/js/app.js" }
+      
+    %script{ type: "text/javascript", src: "/js/app.js" }  

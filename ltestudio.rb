@@ -4,7 +4,9 @@ require "#{path}/config/env.rb"
 
 class Ltestudio < Sinatra::Base
   include Voidtools::Sinatra::ViewHelpers
-
+  
+  
+  
   # partial :comment, { comment: "blah" }
   # partial :comment, comment
 

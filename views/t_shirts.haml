@@ -1,0 +1,11 @@
+%h1 T-Shirts
+
+- DESIGNS.each do |design|
+  .design
+    - link = "/t-shirts/#{design}"
+  
+    %a{ href: link }
+      %img{ src: "/images/designs/#{design}.png" }
+    %p
+      %a{ href: link }
+        = design.capitalize
