@@ -1,8 +1,12 @@
 DESIGNS = [
-  { name: "If You Want",      file: "ifyouwant" },
-  { name: "If You Want Due",  file: "ifyouwant2" },
-  { name: "An Tani",          file: "antani1" },
-  { name: "Ntani2",           file: "antani2" },
+  { name: "Twelve monk",      file: "12monk" },
+  { name: "Bom",              file: "bom" },
+  { name: "Clint",            file: "clint" },
+  { name: "Woman",            file: "donna" },
+  { name: "Impronta",         file: "impronta" },
+  { name: "Love",             file: "love" },
+  { name: "Satri",            file: "satrial" },
+  { name: "SKull",            file: "skull" },
 ]
 
 WORKS = [

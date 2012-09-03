@@ -15,9 +15,15 @@ a
 .clear
   clear: both
 
+
+@font-face  
+  font-family: clemente
+  src: url('/fonts/clemente.ttf') 
+
+
 // variabili
 
-$stile_bordi: 3px dotted #777
+$stile_bordi: 3px dotted black
 
 // stile generico
 
@@ -25,7 +31,7 @@ body
   padding: 0 
   margin: 0
   background: #BBB url(/images/bg.png) repeat-x
-  font-family: Helvetica, Verdana, Arial
+  font-family: clemente, Helvetica, Verdana, Arial
 
 a
   color: #222
@@ -46,10 +52,16 @@ header h1
     width: 150px
   
 nav 
+  margin: 50px 10px 50px 10px
+  background: black
   text-align: center
+  padding: 6px
   a
     font-size: 1.4em
-    margin: 1%
+    margin: 4%
+    color: white
+  a:hover
+    color: lightgrey
 
 .content
   width: 85%
@@ -60,11 +72,14 @@ nav
   h1
     margin: 0 0 10px 0
     
-    
+hr
+  margin: 0px 6px 20px 6px
+  border: 1.5px dotted black
+
 // pagina home
 
 #img_gal 
-  height: 600px
+  height: 680px
   position: relative
   img
     width: 100%
@@ -79,18 +94,34 @@ nav
     opacity: 0
   img:first-child
     opacity: 1
- 
+    
+p 
+  background: light grey
+  color: white
+  text-shadow: 1px 1px 5px black
+  font-size: 20px
 
 // pagina liste designs/lavori
 
+.box
+  background: white
+
+
 .design, .work
-  display: inline-block
-  width: 26%
-  margin: 0 2% 30px 0
+  float: left
+  width: 48.6%
+  margin: 0 2.8% 30px 0
   p
     margin-top: 10px
+    background: black
+    text-align: center
+    a
+      color: white
   img
     width: 100%
+    
+.design:nth-child(2n), .work:nth-child(2n)
+  margin: 0 0 30px 0
 
 // pagina singola t-shirt/work
 

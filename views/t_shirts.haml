@@ -1,11 +1,13 @@
-%h1 T-Shirts
+%h1 Grafiche
 
-- DESIGNS.each do |design|
-  .design
-    - link = "/t-shirts/#{design.file}"
+%div.box
+  - DESIGNS.each do |design|
+    .design
+      - link = "/t-shirts/#{design.file}"
   
-    %a{ href: link }
-      %img{ src: "/images/designs/#{design.file}.png" }
-    %p
       %a{ href: link }
-        = design.name.capitalize
+        %img{ src: "/images/designs/#{design.file}.png" }
+        %p
+          %a{ href: link }
+            = design.name.capitalize
+.clear
