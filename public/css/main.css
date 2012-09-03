@@ -20,7 +20,7 @@ a {
 body {
   padding: 0;
   margin: 0;
-  background: #bbbbbb url(/images/bg.png) repeat-x;
+  background: #999999 url(/images/bg.png) repeat-x;
   font-family: clemente, Helvetica, Verdana, Arial; }
 
 a {
@@ -81,10 +81,17 @@ hr {
   #img_gal img:first-child {
     opacity: 1; }
 
-p {
+p.about {
   background: light grey;
-  color: white;
-  text-shadow: 1px 1px 5px black;
+  color: black;
+  text-shadow: 2px 2px px black;
+  font-size: 17.5px;
+  font-family: nilland;
+  background: url(/images/sfondo_about.png);
+  background-size: cover; }
+
+p {
+  font-family: nilland;
   font-size: 20px; }
 
 .box {
@@ -92,8 +99,8 @@ p {
 
 .design, .work {
   float: left;
-  width: 48.6%;
-  margin: 0 2.8% 30px 0; }
+  width: 30.6%;
+  margin: 0px 4% 3px 0px; }
   .design p, .work p {
     margin-top: 10px;
     background: black;
@@ -103,8 +110,8 @@ p {
   .design img, .work img {
     width: 100%; }
 
-.design:nth-child(2n), .work:nth-child(2n) {
-  margin: 0 0 30px 0; }
+.design:nth-child(3n), .work:nth-child(3n) {
+  margin: 0px 0% 3px 0px; }
 
 .single img {
   width: 100%; }
