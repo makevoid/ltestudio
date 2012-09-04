@@ -6,7 +6,7 @@
     gal_anim = function() {
       var time,
         _this = this;
-      time = 6000;
+      time = 3000;
       return setTimeout(function() {
         var cond, images, next_idx;
         images = _($("#img_gal img")).map(function(el) {

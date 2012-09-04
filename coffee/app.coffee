@@ -2,7 +2,7 @@ $ ->
   cur_idx = 0
   
   gal_anim = ->
-    time = 6000
+    time = 3000
     # time = 1000
 
     setTimeout =>

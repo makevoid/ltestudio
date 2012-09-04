@@ -11,9 +11,12 @@
     %meta{ property: "og:type", content: "website" }
     %meta{ property: "og:image", content: "http://ltestudio.it/images/logo.png" }
     %meta{ property: "fb:admins", content: "giuseppe.d.marzo" }
-    %meta{ property: "viewport", content: "width=device-width, initial-scale=1.0, user-scalable=no" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, user-scalable=no" }
     
     %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
+    / html5 elements ie
+    :javascript
+      (function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
   %body
     #container
       %header
