@@ -50,8 +50,8 @@ nav {
   padding: 4px;
   width: 100%; }
   nav a {
-    font-size: 1.2em;
-    margin: 4%;
+    font-size: 1em;
+    margin: 4% 2%;
     color: white; }
   nav a:hover {
     color: lightgrey; }
