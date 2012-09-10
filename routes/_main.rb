@@ -24,6 +24,10 @@ class Ltestudio < Sinatra::Base
     haml :work
   end
   
+  get "/stampe" do
+    haml :stampe 
+  end
+  
   get "/contatti" do
     haml :contatti
   end
@@ -31,5 +35,9 @@ class Ltestudio < Sinatra::Base
   get "/shop" do
     haml :shop
   end
+  
+  
+  
+
   
 end
