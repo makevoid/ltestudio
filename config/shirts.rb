@@ -1,12 +1,4 @@
 DESIGNS = [
-  { name: "Twelve monk",      file: "12monk" },
-  { name: "Bom",              file: "bom" },
-  { name: "Clint",            file: "clint" },
-  { name: "Woman",            file: "donna" },
-  { name: "Impronta",         file: "impronta" },
-  { name: "Love",             file: "love" },
-  { name: "Satri",            file: "satrial" },
-  { name: "SKull",            file: "skull" },
   { name: "TWELVE MONK",      file: "12monk" },
   { name: "BOM",              file: "bom" },
   { name: "CLINT",            file: "clint" },
