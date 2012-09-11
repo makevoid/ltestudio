@@ -15,11 +15,7 @@ a {
 
 @font-face {
   font-family: clemente;
-  src: url("/fonts/clemente.ttf") url("/fonts/clemente.otf"); }
-
-@font-face {
-  font-family: nilland;
-  src: url("/fonts/nilland.ttf") url("/fonts/nilland.otf"); }
+  src: url("/fonts/clemente.ttf"), url("/fonts/clemente.otf"); }
 
 body {
   padding: 0;
@@ -92,13 +88,13 @@ img.full {
 p.about {
   color: black;
   text-shadow: 2px 2px px black;
-  font-size: 17.5px;
-  font-family: nilland;
+  font-size: 1em;
+  font-family: clemente;
   background-size: cover; }
 
 p {
-  font-family: nilland;
-  font-size: 20px; }
+  font-family: clemente;
+  font-size: 1.2em; }
 
 .box {
   background: white; }
@@ -110,9 +106,11 @@ p {
   .design p, .work p {
     margin-top: 10px;
     background: black;
-    text-align: center; }
+    text-align: center;
+    font-size: 1em; }
     .design p a, .work p a {
-      color: white; }
+      color: white;
+      font-size: 0, 6em; }
   .design img, .work img {
     width: 100%; }
 

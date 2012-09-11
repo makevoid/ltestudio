@@ -7,6 +7,14 @@ DESIGNS = [
   { name: "Love",             file: "love" },
   { name: "Satri",            file: "satrial" },
   { name: "SKull",            file: "skull" },
+  { name: "TWELVE MONK",      file: "12monk" },
+  { name: "BOM",              file: "bom" },
+  { name: "CLINT",            file: "clint" },
+  { name: "WOMAN",            file: "donna" },
+  { name: "IMPRONTA",         file: "impronta" },
+  { name: "LOVE",             file: "love" },
+  { name: "SATRI",            file: "satrial" },
+  { name: "SKULL",            file: "skull" },
 ]
 
 WORKS = [
