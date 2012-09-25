@@ -33,7 +33,7 @@ a:hover {
 
 header h1 {
   margin: 30px auto 20px auto;
-  border-bottom: 3px dotted black; }
+  border-bottom: 2px dotted black; }
   header h1 img {
     margin: 30px auto 20px auto;
     display: block;
@@ -55,9 +55,10 @@ nav {
 .content {
   width: 60%;
   margin: 25px auto 30px auto;
-  border: 3px dotted black;
+  border: 2px dotted black;
   padding: 1.5% 2% 3% 2%;
-  border-radius: 12px; }
+  border-radius: 105px;
+  background: white; }
   .content h1 {
     margin: 0 0 10px 0; }
 
@@ -94,7 +95,8 @@ p.about {
 
 p {
   font-family: clemente;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: 0 20px 0 20px; }
 
 .box {
   background: white; }
