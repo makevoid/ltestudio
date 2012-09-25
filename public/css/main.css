@@ -107,23 +107,32 @@ p {
     margin-top: 10px;
     background: black;
     text-align: center;
-    font-size: 1em; }
+    font-size: 1em;
+    margin: 0 0 0 5px; }
     .design p a, .work p a {
       color: white;
       font-size: 0, 6em; }
   .design img, .work img {
-    width: 100%; }
+    width: 100%;
+    margin: 8px 0 0 0;
+    border: 3px solid black; }
 
 .design:nth-child(3n), .work:nth-child(3n) {
   margin: 0px 0% 3px 0px; }
 
 .single img {
-  width: 100%; }
+  width: 70%;
+  margin: 0 0 0 125px; }
 
 #map_canvas {
-  margin: 10px 0px 20px 0px; }
+  margin: 10px 0px 20px 125px;
+  border: 3px solid; }
+
+#map_canvas2 {
+  margin: 10px 0px 20px 125px;
+  border: 3px solid; }
 
 .map {
   margin: 20px 0 0 0;
-  width: 100%;
+  width: 70%;
   height: 500px; }
