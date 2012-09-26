@@ -36,6 +36,10 @@ class Ltestudio < Sinatra::Base
     haml :shop
   end
   
+  get "/sport" do
+    haml :sport
+  end
+  
   
   
 
