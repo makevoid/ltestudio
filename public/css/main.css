@@ -33,8 +33,7 @@ a:hover {
   text-shadow: 1px 0px 0px darkred; }
 
 header h1 {
-  margin: 30px auto 20px auto;
-  border-bottom: 2px dotted black; }
+  margin: 30px auto 20px auto; }
   header h1 img {
     margin: 30px auto 20px auto;
     display: block;
@@ -42,19 +41,19 @@ header h1 {
 
 nav {
   margin: 0px 0px 0px 0px;
-  background: lightgrey;
+  background: black;
   text-align: center;
   padding: 4px;
   width: 100%; }
   nav a {
     font-size: 1em;
     margin: 4% 1%;
-    color: #582020; }
+    color: white; }
   nav a:hover {
     color: white; }
 
 .content {
-  width: 60%;
+  width: 51%;
   margin: 25px auto 30px auto;
   border: 2px dotted black;
   padding: 1.5% 2% 3% 2%;
@@ -91,7 +90,7 @@ img.full {
 p.about {
   color: black;
   text-shadow: 2px 2px px black;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: clemente;
   background-size: cover; }
 
