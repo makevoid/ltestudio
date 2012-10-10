@@ -19,7 +19,8 @@ section {
 
 @font-face {
   font-family: clemente;
-  src: url("/fonts/clemente.ttf"), url("/fonts/clemente.otf"); }
+  src: url("/fonts/clemente.eot");
+  src: url("/fonts/clemente.eot?#iefix") format("embedded-opentype"), url("/fonts/clemente.woff") format("woff"), url("/fonts/clemente.ttf") format("truetype"), url("/fonts/clemente.svg#Clemente") format("svg"), url("/fonts/clemente.otf"); }
 
 body {
   padding: 0;
