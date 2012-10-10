@@ -1,26 +1,29 @@
 // reset css
 
-* 
-  padding: 0 
+*
+  padding: 0
   margin: 0
   box-sizing: none
   border: 0
   text-align: center
 
-ul 
+ul
   list-style-type: none
 
-a 
+a
   text-decoration: none
-  
+
 .clear
   clear: both
 
+section
+  display: block
 
-@font-face  
-  font-family: clemente 
-  src: url('/fonts/clemente.ttf'), url('/fonts/clemente.otf') 
-  
+
+@font-face
+  font-family: clemente
+  src: url('/fonts/clemente.ttf'), url('/fonts/clemente.otf')
+
 
 // variabili
 
@@ -30,10 +33,11 @@ $stile_bordi: 2px dotted black
 // stile generico
 
 body
-  padding: 0 
+  padding: 0
   margin: 0
-  background: url(/images/bg_pattern.png)  
+  background: url(/images/bg_pattern.png)
   font-family: clemente, Helvetica, Verdana, Arial
+  text-align: center
 
 a
   color: #222
@@ -44,18 +48,18 @@ a:hover
 
 
 // stile layout
-  
-header h1   
+
+header h1
   margin: 30px auto 20px auto
-  
-  
+
+
   img
     margin: 30px auto 20px auto
     display: block
     width: 90px
-    
-    
-nav 
+
+
+nav
   margin: 0px 0px 0px 0px
   background: black
   text-align: center
@@ -65,8 +69,8 @@ nav
     font-size: 1em
     margin: 4% 1%
     color: white
-    
-    
+
+
   a:hover
     color: white
 
@@ -77,20 +81,20 @@ nav
   padding: 1.5% 2% 3% 2%
   border-radius: 105px
   background: white
-  
-  
+  text-align: left
+
+
   h1
     margin: 0 0 10px 0px
     text-align: center
-    
+
 hr
   margin: 14px 0px 20px 0px
   border: 1.5px dotted black
 
 // pagina home
 
-#img_gal 
- 
+#img_gal
   position: relative
   img
     width: 100%
@@ -102,30 +106,30 @@ hr
     -moz-transition-property: opacity
     -moz-transition-duration: 1s
     -moz-transition-timing-function: ease-in-out
+    -o-transition-property: opacity
+    -o-transition-duration: 1s
+    -o-transition-timing-function: ease-in-out
     opacity: 0
-    display: block 
+    display: block
   img:first-child
     opacity: 1
-    
-img.full 
-  width: 100%
-  
-    
-p.about 
+
+
+p.about
   color: black
   text-shadow: 2px 2px px black
   font-size: 0.9em
   font-family: clemente
   background-size: cover
-  
+
 p
   font-family: clemente
-  font-size: 1.2em 
+  font-size: 1.2em
   margin: 0 20px 0 20px
-  
-  
-  
-    
+
+
+
+
 
 // pagina liste designs/lavori
 
@@ -150,10 +154,17 @@ p
   img
     width: 100%
     margin: 8px 0 0 0
-    border: 3px solid black 
-    
-.design:nth-child(3n), .work:nth-child(3n)
-  margin: 0px 0% 3px 0px
+    border: 3px solid black
+
+.design, .work
+  &:nth-child(3n)
+    margin: 0px 0% 3px 0px
+
+body.ie
+  .design, .work
+    width: 29.2%
+
+
 
 // pagina singola t-shirt/work
 
@@ -161,14 +172,14 @@ p
   img
     width: 70%
     margin: auto
- 
+
 // pagina contatti
 
 
 #map_canvas
   margin: auto auto 20px auto
   border: 3px solid
-  
+
 #map_canvas2
   margin: auto
   border: 3px solid
@@ -177,8 +188,8 @@ p
   margin: 20px 0 0 0
   width: 70%
   height: 500px
-  
-  
+
+
 //pagina printing
 
 
@@ -189,4 +200,3 @@ p
 
 
 
-  

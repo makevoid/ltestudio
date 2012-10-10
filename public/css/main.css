@@ -14,6 +14,9 @@ a {
 .clear {
   clear: both; }
 
+section {
+  display: block; }
+
 @font-face {
   font-family: clemente;
   src: url("/fonts/clemente.ttf"), url("/fonts/clemente.otf"); }
@@ -22,7 +25,8 @@ body {
   padding: 0;
   margin: 0;
   background: url(/images/bg_pattern.png);
-  font-family: clemente, Helvetica, Verdana, Arial; }
+  font-family: clemente, Helvetica, Verdana, Arial;
+  text-align: center; }
 
 a {
   color: #222222;
@@ -58,7 +62,8 @@ nav {
   border: 2px dotted black;
   padding: 1.5% 2% 3% 2%;
   border-radius: 105px;
-  background: white; }
+  background: white;
+  text-align: left; }
   .content h1 {
     margin: 0 0 10px 0px;
     text-align: center; }
@@ -79,13 +84,13 @@ hr {
     -moz-transition-property: opacity;
     -moz-transition-duration: 1s;
     -moz-transition-timing-function: ease-in-out;
+    -o-transition-property: opacity;
+    -o-transition-duration: 1s;
+    -o-transition-timing-function: ease-in-out;
     opacity: 0;
     display: block; }
   #img_gal img:first-child {
     opacity: 1; }
-
-img.full {
-  width: 100%; }
 
 p.about {
   color: black;
@@ -123,6 +128,9 @@ p {
 
 .design:nth-child(3n), .work:nth-child(3n) {
   margin: 0px 0% 3px 0px; }
+
+body.ie .design, body.ie .work {
+  width: 29.2%; }
 
 .single img {
   width: 70%;
