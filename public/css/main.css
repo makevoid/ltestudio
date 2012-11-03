@@ -34,8 +34,8 @@ a {
   font-weight: bold; }
 
 a:hover {
-  color: #777777;
-  text-shadow: 1px 0px 0px darkred; }
+  color: grey;
+  text-shadow: 2px 0px 3px light-grey; }
 
 header h1 {
   margin: 30px auto 20px auto; }
@@ -55,7 +55,7 @@ nav {
     margin: 4% 1%;
     color: white; }
   nav a:hover {
-    color: white; }
+    color: grey; }
 
 .content {
   width: 51%;
