@@ -37,19 +37,14 @@
         %a{ href: "/contatti" } CONTATTI
 
       %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
-      %section.content= yield
+      %section.content
+        = yield
+      .push
+    .footer
+      Antani sblinda copyright
 
     %script{ type: "text/javascript", src: "/js/vendor/underscore.js" }
-<<<<<<< HEAD
     %script{ type: "text/javascript", src: "/js/vendor/jquery_imagesloaded.js" }
     - if request.user_agent =~ /MSIE/
       %script{ type: "text/javascript", src: "/js/vendor/jquery_cycle.js" }
     %script{ type: "text/javascript", src: "/js/app.js" }
-=======
-    %script{ type: "text/javascript", src: "/js/app.js" }
-    
-    
-
-  
- 
->>>>>>> modif0

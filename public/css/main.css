@@ -22,6 +22,9 @@ section {
   src: url("/fonts/clemente.eot");
   src: url("/fonts/clemente.eot?#iefix") format("embedded-opentype"), url("/fonts/clemente.woff") format("woff"), url("/fonts/clemente.ttf") format("truetype"), url("/fonts/clemente.svg#Clemente") format("svg"), url("/fonts/clemente.otf"); }
 
+html, body {
+  height: 100%; }
+
 body {
   padding: 0;
   margin: 0;
@@ -72,6 +75,16 @@ nav {
 hr {
   margin: 14px 0px 20px 0px;
   border: 1.5px dotted black; }
+
+#container {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -60px; }
+
+.footer, .push {
+  height: 60px;
+  font-size: 0.6em; }
 
 #img_gal {
   position: relative; }
