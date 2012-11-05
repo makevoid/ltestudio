@@ -28,7 +28,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  background: url(/images/bg_pattern.png);
+  background: url(/images/sfondo_rete2.png);
   font-family: clemente, Helvetica, Verdana, Arial;
   text-align: center; }
 
@@ -66,7 +66,7 @@ nav {
   margin: 25px auto 30px auto;
   border: 2px dotted #008a2e;
   padding: 1.5% 2% 3% 2%;
-  border-radius: 80px;
+  border-radius: 30px;
   background: white;
   text-align: left; }
   .content h1 {
@@ -135,7 +135,7 @@ p {
     border-radius: 10px; }
     .design p a, .work p a {
       color: white;
-      font-size: 0, 6em; }
+      font-size: 0.7em; }
   .design img, .work img {
     width: 100%;
     margin: 8px 0 0 0;
