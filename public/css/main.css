@@ -28,7 +28,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  background: url(/images/sfondo_rete2.png);
+  background: url(/images/sfondo_rete2.png) repeat-x;
   font-family: clemente, Helvetica, Verdana, Arial;
   text-align: center; }
 
@@ -68,7 +68,8 @@ nav {
   padding: 1.5% 2% 3% 2%;
   border-radius: 30px;
   background: white;
-  text-align: left; }
+  text-align: left;
+  background: rgba(255, 255, 255, 0.6); }
   .content h1 {
     margin: 0 0 10px 0px;
     text-align: center; }
