@@ -16,6 +16,14 @@ WORKS = [
   { name: "Works 4",  file: "4" },
 ]
 
+STAMPE = [
+  { name: "Plottaggi",  file: "1" },
+  { name: "Biglietti da visita",  file: "2" },
+  { name: "Works 3",  file: "3" },
+  { name: "Works 4",  file: "4" },
+]
+
 include Mhash
 DESIGNS.each{ |d| d.to_mhash! }
 WORKS.each{ |d| d.to_mhash! }
+STAMPE.each{ |d| d.to_mhash! }

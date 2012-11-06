@@ -1,1 +1,15 @@
-%h1 LAVORI IN CORSO
+%h1 Servizi Stampa
+
+%div.box
+  - STAMPE.each do |stampa|
+    .stampa
+      - link = "/stampe/#{stampa.file}"
+
+      %a{ href: link }
+        %img{ src: "/images/stampe/#{stampa.file}.png" }
+      %p
+        %a{ href: link }
+          = stampa.name.capitalize
+  
+  
+.clear

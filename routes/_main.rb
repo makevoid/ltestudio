@@ -28,6 +28,12 @@ class Ltestudio < Sinatra::Base
     haml :stampe 
   end
   
+  get "/stampe/:file" do
+    @stampa = STAMPE.find{ |s| s.file == params[:file] }
+    halt 404, "Pagina non trovata" unless @stampa
+    haml :stampa
+  end
+  
   get "/contatti" do
     haml :contatti
   end

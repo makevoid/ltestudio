@@ -164,3 +164,7 @@ body.ie .design, body.ie .work {
   margin: 20px 0 0 0;
   width: 70%;
   height: 300px; }
+
+.box {
+  background: white;
+  width: 100%; }
