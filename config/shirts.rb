@@ -17,10 +17,14 @@ WORKS = [
 ]
 
 STAMPE = [
-  { name: "Plottaggi",  file: "1" },
-  { name: "Biglietti da visita",  file: "2" },
-  { name: "Works 3",  file: "3" },
-  { name: "Works 4",  file: "4" },
+  { name: "Plottaggi",  file: "plotter" },
+  { name: "Biglietti da visita",  file: "biglietti" },
+  { name: "Fotocopie",  file: "fotocopie" },
+  { name: "Brochure",  file: "brochure" },
+  { name: "Rilegature",  file: "rilegature" },
+  { name: "Adesivi",  file: "adesivi" },
+  { name: "Tesi di laurea",  file: "tesi" },
+  { name: "Cataloghi",  file: "cataloghi" },
 ]
 
 include Mhash

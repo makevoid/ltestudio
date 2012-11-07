@@ -150,7 +150,8 @@ body.ie .design, body.ie .work {
 
 .single img {
   width: 70%;
-  margin: auto; }
+  margin: auto;
+  border: 3px solid #008a2e; }
 
 #map_canvas {
   margin: auto auto 20px auto;
@@ -166,5 +167,29 @@ body.ie .design, body.ie .work {
   height: 300px; }
 
 .box {
-  background: white;
-  width: 100%; }
+  background: white; }
+
+.stampa {
+  float: left;
+  width: 30.6%;
+  margin: 0px 4% 3px 0px; }
+  .stampa p {
+    margin-top: 0px;
+    background: black;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 18px 0 25px;
+    border-radius: 10px; }
+    .stampa p a {
+      color: white;
+      font-size: 0.7em; }
+  .stampa img {
+    width: 100%;
+    margin: 8px 0 0 0;
+    border: 3px solid #008a2e; }
+
+.stampa:nth-child(3n) {
+  margin: 0px 0% 3px 0px; }
+
+body.ie .design, body.ie .work {
+  width: 29.2%; }
