@@ -25,6 +25,7 @@ STAMPE = [
   { name: "Adesivi",  file: "adesivi" },
   { name: "Tesi di laurea",  file: "tesi" },
   { name: "Cataloghi",  file: "cataloghi" },
+  { name: "Vetrofanie",  file: "vetrofanie" },
 ]
 
 include Mhash
