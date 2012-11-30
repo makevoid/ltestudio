@@ -10,10 +10,11 @@ DESIGNS = [
 ]
 
 WORKS = [
-  { name: "Works 1",  file: "1" },
-  { name: "Works 2",  file: "2" },
-  { name: "Works 3",  file: "3" },
-  { name: "Works 4",  file: "4" },
+  { name: "SUBWAY",  file: "subway" },
+  { name: "DUDE",  file: "dude" },
+  { name: "HOMELESS#1",  file: "homeless_1" },
+  { name: "HOMELESS#2",  file: "homeless_2" },
+  { name: "WALTER WHITE",  file: "walter" },
 ]
 
 STAMPE = [
