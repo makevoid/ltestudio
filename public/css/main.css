@@ -28,7 +28,7 @@ html, body {
 body {
   padding: 0;
   margin: 0;
-  background: url(/images/sfondo_rete2.png) repeat-x;
+  background: url(/images/sfondo3.png) repeat-x;
   font-family: clemente, Helvetica, Verdana, Arial;
   text-align: center; }
 
@@ -41,14 +41,14 @@ a:hover {
   text-shadow: 2px 0px 3px light-grey; }
 
 header h1 {
-  margin: 30px auto 20px auto; }
+  margin: -30px auto 30px auto; }
   header h1 img {
     margin: 30px auto 20px auto;
     display: block;
     width: 90px; }
 
 nav {
-  margin: 0px 0px 0px 0px;
+  margin: -23px 0px 0px 0px;
   background: black;
   text-align: center;
   padding: 4px;
