@@ -62,8 +62,8 @@ nav {
     color: #008a2e; }
 
 .content {
-  width: 51%;
-  margin: 25px auto 30px auto;
+  width: 52%;
+  margin: 25px auto 10px auto;
   border: 2px dotted #008a2e;
   padding: 1.5% 2% 3% 2%;
   border-radius: 0px;
@@ -77,6 +77,14 @@ nav {
 hr {
   margin: 14px 0px 20px 0px;
   border: 1.5px dotted black; }
+
+.like_layout {
+  float: right;
+  margin: 0 21.5% 15px 0; }
+
+.like_content {
+  margin: 20px 0 0px 0;
+  float: right; }
 
 #container {
   min-height: 100%;

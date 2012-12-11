@@ -2,3 +2,8 @@
 
 .single
   %img{ src: "/images/work/#{@work.file}.png" }
+  
+.like_content
+  %div{ class: "fb-like", "data-href" => "http://ltestudio.it/works/#{@work.file}", "data-send" => "true", "data-width" => "250", "data-show-faces" => "false" }  
+
+.clear  
