@@ -10,7 +10,14 @@
     %meta{ property: "og:site_name", content: "LTE Studio" }
     %meta{ property: "og:title", content: "LTE Studio" }
     %meta{ property: "og:type", content: "website" }
-    %meta{ property: "og:image", content: "http://ltestudio.it/images/logo_sito.png" }
+    - if @shirt
+      - url = "http://ltestudio.it/images/shirts/#{@shirt.file}.png"
+    - elsif @work
+      - url = "http://ltestudio.it/images/works/#{@work.file}.png"
+    - else   
+      - url = "http://ltestudio.it/images/logo_sito.png"
+    %meta{ property: "og:image", content: url }
+    
     %meta{ property: "fb:admins", content: "giuseppe.d.marzo" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, user-scalable=no" }
     %script{ type: "text/javascript", src: "/js/ie_html5.js" }
@@ -43,7 +50,7 @@
       %section.content
         = yield
         
-      - if body_class == "home"
+      - if home?
         .like_layout
           %div{ class: "fb-like", "data-href" => "http://ltestudio.it", "data-send" => "true", "data-width" => "250", "data-show-faces" => "false" }
       .clear

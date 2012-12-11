@@ -19,6 +19,12 @@ class Ltestudio < Sinatra::Base
     end
     haml "_#{name}".to_sym, locals: locals
   end
+  
+  helpers do 
+    def home?
+      body_class == "home"
+    end
+  end
 end
 
 require_all "#{path}/routes"
