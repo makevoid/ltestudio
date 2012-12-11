@@ -6,18 +6,21 @@
     %meta{ property: "description", content: "LTE studio è un centro di grafica e stampa che nasce con l'obiettivo di soddisfare tutte le esigenze e le necessità dei vari clienti." }
     %meta{ property: "keywords", content: "LTE studio, stampa, grafica, firenze, fotocopie, stampe fotografiche, fotografia, t-shirt, personalizzate, plottaggi, plotter, render 3d, quadri, stencil" }
     %meta{ property: "author", content: "Giuseppe Di Marzo, Francesco 'makevoid' Canessa" }
-    %meta{ property: "og:url", content: "http://ltestudio.it/" }
     %meta{ property: "og:site_name", content: "LTE Studio" }
     %meta{ property: "og:title", content: "LTE Studio" }
     %meta{ property: "og:type", content: "website" }
     - if @shirt
-      - url = "http://ltestudio.it/images/shirts/#{@shirt.file}.png"
+      - image = "http://ltestudio.it/images/shirts/#{@shirt.file}.png"
+      - url = "http://ltestudio.it/images/shirts/#{@shirt.file}"
     - elsif @work
-      - url = "http://ltestudio.it/images/works/#{@work.file}.png"
-    - else   
-      - url = "http://ltestudio.it/images/logo_sito.png"
-    %meta{ property: "og:image", content: url }
-    
+      - image = "http://ltestudio.it/images/works/#{@work.file}.png"
+      - url = "http://ltestudio.it/images/shirts/#{@work.file}"
+    - else
+      - image = "http://ltestudio.it/images/logo_sito.png"
+      - url = "http://ltestudio.it/"
+    %meta{ property: "og:image", content: image }
+    %meta{ property: "og:url", content: url }
+
     %meta{ property: "fb:admins", content: "giuseppe.d.marzo" }
     %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, user-scalable=no" }
     %script{ type: "text/javascript", src: "/js/ie_html5.js" }
@@ -43,13 +46,13 @@
         %a{ href: "/shop" }     SHOP
         I
         %a{ href: "/contatti" } CONTATTI
-        
+
 
 
       %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
       %section.content
         = yield
-        
+
       - if home?
         .like_layout
           %div{ class: "fb-like", "data-href" => "http://ltestudio.it", "data-send" => "true", "data-width" => "250", "data-show-faces" => "false" }
