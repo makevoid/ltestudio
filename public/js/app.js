@@ -8,9 +8,7 @@
       img_height = function() {
         return $("" + element + " img:first").height();
       };
-      set_height = function() {
-        return $(element).height(img_height());
-      };
+      set_height = function() {};
       $(element).imagesLoaded(function() {
         return set_height();
       });

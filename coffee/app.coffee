@@ -7,11 +7,12 @@ $ ->
   # functions
 
   gal_resize = (element) ->
+  
     img_height = ->
       $("#{element} img:first").height()
 
     set_height = ->
-      $(element).height img_height()
+      #$(element).height img_height()
 
     $(element).imagesLoaded ->
       set_height()
