@@ -7,7 +7,7 @@ $ ->
   # functions
 
   gal_resize = (element) ->
-  
+
     img_height = ->
       $("#{element} img:first").height()
 
@@ -39,8 +39,26 @@ $ ->
   gal_anim_with_cycle = (element) ->
     $(element).cycle()
 
-  is_ie = navigator.userAgent.match(/MSIE/)
+  google_map = ->
+    maps = {}
+    gmap = (div, lat, lng) ->
+      mapDiv = document.getElementById(div)
+      latLng = new google.maps.LatLng(lat, lng)
+      maps[div] = new google.maps.Map(mapDiv, {
+        center: latLng,
+        zoom: 15,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      })
+      marker = new google.maps.Marker({
+        position: latLng,
+        map: maps[div]
+      })
 
+    gmap 'map_canvas', 43.788327, 11.234041
+    gmap 'map_canvas2', 41.547774,14.664314
+
+
+  is_ie = navigator.userAgent.match(/MSIE/)
 
   # main
 
@@ -54,3 +72,5 @@ $ ->
     gal_anim gallery_elem
   else
     gal_anim_with_cycle gallery_elem
+
+  google_map()

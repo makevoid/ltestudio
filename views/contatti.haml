@@ -39,27 +39,4 @@
 
 #map_canvas2.map
 
-
-
 %script{ src: "http://maps.google.com/maps/api/js?sensor=false" }
-%script{ type: "text/javascript" }
-  :plain
-    $(function(){
-      var maps = {}
-      window.gmap = function (div, lat, lng) {
-        var mapDiv = document.getElementById(div)
-        var latLng = new google.maps.LatLng(lat, lng)
-        maps[div] = new google.maps.Map(mapDiv, {
-          center: latLng,
-          zoom: 15,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        })
-        var marker = new google.maps.Marker({
-          position: latLng,
-          map: maps[div]
-        })
-      }
-
-      gmap('map_canvas', 43.788327, 11.234041)
-      gmap('map_canvas2', 41.547774,14.664314)
-    })
