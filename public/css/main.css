@@ -160,10 +160,12 @@ p {
     margin: 0 0 0 20px;
     color: #fffeef; }
   .box_sinistra p {
-    font-size: 1.5em;
+    font-size: 0.7em;
     margin: 0 20px 0 10px;
     text-align: left;
-    color: #fffeef; }
+    color: #fffeef;
+    letter-spacing: 0.1em;
+    font-family: lithos pro; }
   .box_sinistra img {
     width: 40%;
     float: left;
