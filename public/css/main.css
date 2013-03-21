@@ -49,7 +49,7 @@ header h1 {
     float: left;
     margin: 50px 29px 0 0px; }
   header h1 a {
-    color: white; }
+    color: #fffeef; }
   header h1 img {
     margin: 42px auto 20px auto;
     width: 117px;
@@ -66,9 +66,9 @@ nav {
     font-size: 4em;
     margin: 0 0 0 0;
     color: black;
-    background: white;
+    background: #fffeef;
     padding: 20px 0;
-    border-radius: 50px;
+    border-radius: 60px;
     width: 110px;
     display: inline-block; }
   nav a:hover {
@@ -102,8 +102,12 @@ hr {
   width: 1100px; }
 
 .footer {
-  font-size: 1.5em;
-  margin: 50px 0 0 0; }
+  font-size: 1.2em;
+  margin: 50px 0 0 0;
+  color: #77dd77; }
+
+.social img {
+  width: 20px; }
 
 .palline_top {
   margin: 100px 0 50px 0; }
@@ -152,11 +156,13 @@ p {
   .box_sinistra h1 {
     font-size: 4em;
     text-align: left;
-    margin: 0 0 0 20px; }
+    margin: 0 0 0 20px;
+    color: #fffeef; }
   .box_sinistra p {
     font-size: 1.5em;
     margin: 0 20px 0 10px;
-    text-align: left; }
+    text-align: left;
+    color: #fffeef; }
   .box_sinistra img {
     width: 40%;
     float: left;
