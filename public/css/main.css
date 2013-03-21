@@ -103,10 +103,12 @@ hr {
 
 .footer {
   font-size: 1.2em;
-  margin: 50px 0 0 0;
-  color: #77dd77; }
-  .footer .social img {
-    width: 20px; }
+  margin: 100px 0 0 0;
+  color: #77dd77;
+  letter-spacing: 0.2em; }
+
+.social img {
+  width: 20px; }
 
 .palline_top {
   margin: 100px 0 50px 0; }
@@ -165,8 +167,7 @@ p {
   .box_sinistra img {
     width: 40%;
     float: left;
-    background: white;
-    margin: 0 10px 0 10px;
+    margin: 0 10px 20px 10px;
     border-radius: 5px; }
 
 .home .box_destra img {
