@@ -143,10 +143,14 @@ hr
 
 #img_gal
   position: relative
+  a
+    opacity: 0
   img
     width: 100%
     float: left
     position: absolute
+    display: block
+  a, img
     -webkit-transition-property: opacity
     -webkit-transition-duration: 1s
     -webkit-transition-timing-function: ease-in-out
@@ -157,8 +161,9 @@ hr
     -o-transition-duration: 1s
     -o-transition-timing-function: ease-in-out
     opacity: 0
-    display: block
   img:first-child
+    opacity: 1
+  a:first-child
     opacity: 1
 
 

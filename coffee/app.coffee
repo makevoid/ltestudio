@@ -22,10 +22,9 @@ $ ->
 
   gal_anim = (element) ->
     time = 3000
-    # time = 1100
 
     setTimeout =>
-      images = _($("#{element} img")).map (el) -> el
+      images = _($("#{element} a")).map (el) -> el
       cond = cur_idx >= images.length-1
       next_idx = if cond then 0 else cur_idx+1
       $(images[cur_idx]).css "opacity", 0
@@ -36,7 +35,7 @@ $ ->
       gal_anim element
     , time
     
-    gal_bind_clicks element, cur_idx
+    #gal_bind_clicks element, cur_idx
 
   gal_anim_with_cycle = (element) ->
     $(element).cycle()
@@ -66,6 +65,15 @@ $ ->
     gmap 'map_canvas', 43.788327, 11.234041
     gmap 'map_canvas2', 41.547774,14.664314
 
+  fancybox = ->
+    gallery = $ ".fancy"
+    gallery.fancybox
+      padding: 0
+      maxWidth: "80%"
+      helpers:
+        overlay:
+          css:
+            background: 'rgba(200, 200, 200, 0.6)'
 
   is_ie = navigator.userAgent.match(/MSIE/)
 
@@ -82,6 +90,6 @@ $ ->
   else
     gal_anim_with_cycle gallery_elem
   
-
+  fancybox()
     
   google_map() if google?

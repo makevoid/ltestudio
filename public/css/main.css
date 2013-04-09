@@ -117,10 +117,14 @@ hr {
 
 #img_gal {
   position: relative; }
+  #img_gal a {
+    opacity: 0; }
   #img_gal img {
     width: 100%;
     float: left;
     position: absolute;
+    display: block; }
+  #img_gal a, #img_gal img {
     -webkit-transition-property: opacity;
     -webkit-transition-duration: 1s;
     -webkit-transition-timing-function: ease-in-out;
@@ -130,9 +134,10 @@ hr {
     -o-transition-property: opacity;
     -o-transition-duration: 1s;
     -o-transition-timing-function: ease-in-out;
-    opacity: 0;
-    display: block; }
+    opacity: 0; }
   #img_gal img:first-child {
+    opacity: 1; }
+  #img_gal a:first-child {
     opacity: 1; }
 
 p.about {

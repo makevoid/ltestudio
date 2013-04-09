@@ -6,9 +6,10 @@
   #img_gal
     - DESIGNS.each do |design|
       - link = "/t-shirts/#{design.file}"
-      %img{ src: "/images/designs/#{design.file}.png", :"data-link" => link  } 
-.clear
-
+      - img = "/images/designs/#{design.file}.png"
+      %a.fancy{ href: img,  rel: "group" }
+        %img{ src: "/images/designs/#{design.file}.png", :"data-link" => link  } 
+ 
 
 -# %h1 Grafiche T.shirts
 -# 

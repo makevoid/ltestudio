@@ -1,7 +1,7 @@
 (function() {
 
   $(function() {
-    var cur_idx, gal_anim, gal_anim_with_cycle, gal_bind_clicks, gal_resize, gallery_elem, google_map, is_ie;
+    var cur_idx, fancybox, gal_anim, gal_anim_with_cycle, gal_bind_clicks, gal_resize, gallery_elem, google_map, is_ie;
     cur_idx = 0;
     gal_resize = function(element) {
       var img_height, set_height;
@@ -20,9 +20,9 @@
       var time,
         _this = this;
       time = 3000;
-      setTimeout(function() {
+      return setTimeout(function() {
         var cond, images, next_idx;
-        images = _($("" + element + " img")).map(function(el) {
+        images = _($("" + element + " a")).map(function(el) {
           return el;
         });
         cond = cur_idx >= images.length - 1;
@@ -32,7 +32,6 @@
         cur_idx = cond ? 0 : cur_idx + 1;
         return gal_anim(element);
       }, time);
-      return gal_bind_clicks(element, cur_idx);
     };
     gal_anim_with_cycle = function(element) {
       return $(element).cycle();
@@ -68,6 +67,21 @@
       gmap('map_canvas', 43.788327, 11.234041);
       return gmap('map_canvas2', 41.547774, 14.664314);
     };
+    fancybox = function() {
+      var gallery;
+      gallery = $(".fancy");
+      return gallery.fancybox({
+        padding: 0,
+        maxWidth: "80%",
+        helpers: {
+          overlay: {
+            css: {
+              background: 'rgba(200, 200, 200, 0.6)'
+            }
+          }
+        }
+      });
+    };
     is_ie = navigator.userAgent.match(/MSIE/);
     if (is_ie) {
       $("body").addClass("ie");
@@ -79,6 +93,7 @@
     } else {
       gal_anim_with_cycle(gallery_elem);
     }
+    fancybox();
     if (typeof google !== "undefined" && google !== null) {
       return google_map();
     }
