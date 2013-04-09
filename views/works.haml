@@ -1,15 +1,11 @@
-%h1 Stencil Art
-
-%div.box
-  - WORKS.each do |work|
-    .work
+.box_sinistra
+  %h1 AEROSOL ART
+  %p LTE è uno Studio di grafica professionale e un centro stampa di alta qualità, che da oltre 30 anni opera in questo settore. Prezzi contenuti, mentalità giovane e attenzione verso il cliente sono gli elementi che creano la base dalla quale ogni nostro lavoro prende forma. 
+  
+.box_destra
+  #img_gal
+    - WORKS.each do |work|
       - link = "/works/#{work.file}"
-
-      %a{ href: link }
-        %img{ src: "/images/works/#{work.file}.png" }
-      %p
-        %a{ href: link }
-          = work.name.capitalize
-  
-  
-.clear
+      - img = "/images/works/#{work.file}.png"
+      %a.fancy{ href: img,  rel: "group" }
+        %img{ src: "/images/works/#{work.file}.png", :"data-link" => link  } 
