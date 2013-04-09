@@ -1,7 +1,7 @@
 (function() {
 
   $(function() {
-    var cur_idx, gal_anim, gal_anim_with_cycle, gal_resize, gallery_elem, google_map, is_ie;
+    var cur_idx, gal_anim, gal_anim_with_cycle, gal_bind_clicks, gal_resize, gallery_elem, google_map, is_ie;
     cur_idx = 0;
     gal_resize = function(element) {
       var img_height, set_height;
@@ -20,7 +20,7 @@
       var time,
         _this = this;
       time = 3000;
-      return setTimeout(function() {
+      setTimeout(function() {
         var cond, images, next_idx;
         images = _($("" + element + " img")).map(function(el) {
           return el;
@@ -32,9 +32,21 @@
         cur_idx = cond ? 0 : cur_idx + 1;
         return gal_anim(element);
       }, time);
+      return gal_bind_clicks(element, cur_idx);
     };
     gal_anim_with_cycle = function(element) {
       return $(element).cycle();
+    };
+    gal_bind_clicks = function(element, idx) {
+      $(element).off("click");
+      return $(element).on("click", function(evt) {
+        var elem, images;
+        images = _($("" + element + " img")).map(function(el) {
+          return el;
+        });
+        elem = $(images[cur_idx]);
+        return window.location = elem.data("link");
+      });
     };
     google_map = function() {
       var gmap, maps;
@@ -67,7 +79,9 @@
     } else {
       gal_anim_with_cycle(gallery_elem);
     }
-    return google_map();
+    if (typeof google !== "undefined" && google !== null) {
+      return google_map();
+    }
   });
 
 }).call(this);

@@ -1,14 +1,25 @@
-%h1 Grafiche T.shirts
-
-%div.box
-  - DESIGNS.each do |design|
-    .design
-      - link = "/t-shirts/#{design.file}"
+.box_sinistra
+  %h1 T-SHIRT
+  %p LTE è uno Studio di grafica professionale e un centro stampa di alta qualità, che da oltre 30 anni opera in questo settore. Prezzi contenuti, mentalità giovane e attenzione verso il cliente sono gli elementi che creano la base dalla quale ogni nostro lavoro prende forma. 
   
-      %a{ href: link }
-        %img{ src: "/images/designs/#{design.file}.png" }
-        %p
-          %a{ href: link }
-            = design.name
+.box_destra
+  #img_gal
+    - DESIGNS.each do |design|
+      - link = "/t-shirts/#{design.file}"
+      %img{ src: "/images/designs/#{design.file}.png", :"data-link" => link  } 
 .clear
+
+
+-# %h1 Grafiche T.shirts
+-# 
+-# %div.box
+-#   - DESIGNS.each do |design|
+-#     .design
+-#       - link = "/t-shirts/#{design.file}"
+-#       %a{ href: link }
+-#         %img{ src: "/images/designs/#{design.file}.png" }
+-#         %p
+-#           %a{ href: link }
+-#             = design.name
+
 

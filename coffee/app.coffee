@@ -35,9 +35,18 @@ $ ->
 
       gal_anim element
     , time
+    
+    gal_bind_clicks element, cur_idx
 
   gal_anim_with_cycle = (element) ->
     $(element).cycle()
+
+  gal_bind_clicks = (element, idx) ->
+    $(element).off "click"
+    $(element).on "click", (evt) ->
+      images = _($("#{element} img")).map (el) -> el
+      elem = $ images[cur_idx]
+      window.location = elem.data "link"
 
   google_map = ->
     maps = {}
@@ -72,5 +81,7 @@ $ ->
     gal_anim gallery_elem
   else
     gal_anim_with_cycle gallery_elem
+  
 
-  google_map()
+    
+  google_map() if google?

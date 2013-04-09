@@ -174,8 +174,11 @@ p {
     margin: 0 10px 20px 10px;
     border-radius: 5px; }
 
-.home .box_destra img {
+.box_destra img {
   border-radius: 5px; }
+
+.t-shirts .box_destra img {
+  width: 100%; }
 
 .box {
   background: white; }
