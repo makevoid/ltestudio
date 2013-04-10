@@ -231,10 +231,14 @@ body.ie .design, body.ie .work {
   z-index: 4; }
 
 #map_canvas {
-  margin: 0 0 20px 19px; }
+  margin: 0 0 20px 19px;
+  width: 90%;
+  height: 15%; }
 
 #map_canvas2 {
-  margin: 0 0 20px 19px; }
+  margin: 0 0 20px 19px;
+  width: 90%;
+  height: 15%; }
 
 .map {
   margin: 20px 0 0 0;
@@ -248,7 +252,7 @@ h2 {
 
 .box_destra p {
   font-family: lithos pro;
-  font-size: 1em;
+  font-size: 0.7em;
   text-align: left; }
 
 .box {
