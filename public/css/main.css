@@ -52,8 +52,8 @@ header h1 {
   header h1 a {
     color: #fffeef; }
   header h1 img {
-    margin: 42px auto 20px auto;
-    width: 117px;
+    margin: 45px auto 20px 10px;
+    width: 100px;
     float: left; }
 
 nav {
@@ -154,7 +154,7 @@ p {
 
 .box_sinistra, .box_destra {
   float: left;
-  width: 48.6%;
+  width: 48.9%;
   background: green;
   min-height: 282px;
   border-radius: 5px; }
@@ -253,7 +253,9 @@ h2 {
 .box_destra p {
   font-family: lithos pro;
   font-size: 0.7em;
-  text-align: left; }
+  text-align: left;
+  margin: 0 20px 0 10px;
+  letter-spacing: 0.1em; }
 
 .box {
   background: white; }

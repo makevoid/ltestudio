@@ -11,10 +11,10 @@
     %meta{ property: "og:title", content: "LTE Studio" }
     %meta{ property: "og:type", content: "website" }
     - if @shirt
-      - image = "http://ltestudio.it/images/shirts/#{@shirt.file}.png"
+      - image = "http://ltestudio.it/images/shirts/#{@shirt.file}.jpg"
       - url = "http://ltestudio.it/shirts/#{@shirt.file}"
     - elsif @work
-      - image = "http://ltestudio.it/images/works/#{@work.file}.png"
+      - image = "http://ltestudio.it/images/works/#{@work.file}.jpg"
       - url = "http://ltestudio.it/works/#{@work.file}"
     - else
       - image = "http://ltestudio.it/images/logo_sito.png"
@@ -34,7 +34,7 @@
         %h1
           %a{ href: "/" }
             / Ltestudio
-            %img{src: "/images/logo_sito.png"}
+            %img{src: "/images/logo_sito3.png"}
             %p LTESTUDIO
       %nav
         %a{ href: "/" }         HOME

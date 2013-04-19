@@ -7,9 +7,9 @@
   #img_gal
     - STAMPE.each do |stampa|
       - link = "/stampe/#{stampa.file}"
-      - img = "/images/stampe/#{stampa.file}.png"
+      - img = "/images/stampe/#{stampa.file}.jpg"
       %a.fancy{ href: img,  rel: "group" }
-        %img{ src: "/images/stampe/#{stampa.file}.png", :"data-link" => link  } 
+        %img{ src: "/images/stampe/#{stampa.file}.jpg", :"data-link" => link  } 
 
 
 

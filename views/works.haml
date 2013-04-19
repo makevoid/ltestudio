@@ -1,12 +1,12 @@
 .box_sinistra
   %h1 AEROSOL ART
   %img{ src:"/images/logo_cartone.jpg" }
-  %p Nella gallery si possono trovare alcuni dei quadri realizzati nel nostro studio. Realizzati con aerografo professionale e con vari livelli di stencil, possono essere personalizzati su richiesta o in alternativa si possono scegliere alcune delle nostre grafiche, sempre contattandoci via mail. 
+  %p Nella gallery si possono trovare alcuni dei quadri creati nel nostro studio. Realizzati con aerografo professionale e con vari livelli di stencil, possono essere personalizzati su richiesta o in alternativa si possono scegliere alcune delle nostre grafiche, sempre contattandoci via mail. 
   
 .box_destra
   #img_gal
     - WORKS.each do |work|
       - link = "/works/#{work.file}"
-      - img = "/images/works/#{work.file}.png"
+      - img = "/images/works/#{work.file}.jpg"
       %a.fancy{ href: img,  rel: "group" }
-        %img{ src: "/images/works/#{work.file}.png", :"data-link" => link  } 
+        %img{ src: "/images/works/#{work.file}.jpg", :"data-link" => link  } 
