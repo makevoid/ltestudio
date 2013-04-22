@@ -22,6 +22,10 @@ section {
   src: url("/fonts/sixcaps.eot");
   src: url("/fonts/sixcaps.eot?#iefix") format("embedded-opentype"), url("/fonts/sixcaps.woff") format("woff"), url("/fonts/sixcaps.ttf") format("truetype"), url("/fonts/sixcaps.svg#sixcaps") format("svg"), url("/fonts/sixcaps.otf"); }
 
+@font-face {
+  font-family: lithos_pro;
+  src: url("/fonts/lithos_pro.otf"); }
+
 html, body {
   height: 100%; }
 
@@ -29,7 +33,7 @@ body {
   padding: 0;
   margin: 0;
   background: black;
-  font-family: sixcaps, Helvetica, Verdana, Arial;
+  font-family: sixcaps, lithos_pro, Helvetica, Verdana, Arial;
   text-align: center;
   color: white; }
 
@@ -155,7 +159,7 @@ p {
 .box_sinistra, .box_destra {
   float: left;
   width: 48.9%;
-  background: green;
+  background: #254117;
   min-height: 282px;
   border-radius: 5px; }
 
