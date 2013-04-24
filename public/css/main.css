@@ -33,7 +33,7 @@ body {
   padding: 0;
   margin: 0;
   background: black;
-  font-family: lithos_pro, Helvetica, Verdana, Arial;
+  font-family: sixcaps, Helvetica, Verdana, Arial;
   text-align: center;
   color: white; }
 
@@ -175,7 +175,8 @@ p {
     margin: 0 20px 0 10px;
     text-align: left;
     color: #fffeef;
-    letter-spacing: 0.1em; }
+    letter-spacing: 0.1em;
+    font-family: lithos_pro; }
   .box_sinistra img {
     width: 40%;
     float: left;
@@ -254,6 +255,7 @@ h2 {
   margin: 0 0 0 20px; }
 
 .box_destra p {
+  font-family: lithos_pro;
   font-size: 0.7em;
   text-align: left;
   margin: 0 20px 0 10px;
