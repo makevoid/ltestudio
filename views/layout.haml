@@ -23,19 +23,20 @@
     %meta{ property: "og:url", content: url }
 
     %meta{ property: "fb:admins", content: "giuseppe.d.marzo" }
-    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, user-scalable=no" }
+    %meta{ name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" }
     - path = request.path.split("/")[1..-1]
     - path = path.join(" ") if path
   %body{ class: path || "home"  }
     #fb-root
     #container
       %header
-        %img.palline_top{src: "/images/palline.png"}
+        %img.palline_top{ src: "/images/palline.png"}
         %h1
           %a{ href: "/" }
             / Ltestudio
-            %img{src: "/images/logo_sito3.png"}
+            %img{ src: "/images/logo_sito3.png"}
             %p LTESTUDIO
+        .clearer
       %nav
         %a{ href: "/" }         HOME
         %a{ href: "/t-shirts" } T.SHIRT
@@ -44,6 +45,8 @@
         %a{ href: "/contatti" } WHERE
 
       .clear
+      -# %span{ style: "font-family: Arial" }= request.user_agent
+      
       %section.content
         = yield
 
@@ -51,14 +54,14 @@
       .footer
         .social
           %a{ href: "https://www.facebook.com/LteStudio?fref=ts" }
-            %img{src: "/images/social/facebook.png"}
+            %img{ src: "/images/social/facebook.png"}
           %a{ href: "https://twitter.com/lte_studio" }  
-            %img{src: "/images/social/twitter.png"}
+            %img{ src: "/images/social/twitter.png"}
           %a{ href: "skype:ltestudio1?call" }
-            %img{src: "/images/social/skype.png"}
+            %img{ src: "/images/social/skype.png"}
           
         © LTE di Di Marzo Antonio & C. S.a.s - P.Iva n°01684190703
-      %img{src: "/images/palline.png"}
+      %img.palline_bottom{ src: "/images/palline.png" }
     %script{ type: "text/javascript", src: "/js/ie_html5.js" }
     %script{ type: "text/javascript", src: "/js/vendor/underscore.js" }
     %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }

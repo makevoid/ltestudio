@@ -1,7 +1,7 @@
 (function() {
 
   $(function() {
-    var cur_idx, fancybox, gal_anim, gal_anim_with_cycle, gal_bind_clicks, gal_resize, gallery_elem, google_map, is_ie;
+    var cur_idx, fancybox, gal_anim, gal_anim_with_cycle, gal_bind_clicks, gal_resize, gallery_elem, google_map, is_ie, resize_bada;
     cur_idx = 0;
     gal_resize = function(element) {
       var img_height, set_height;
@@ -94,6 +94,12 @@
       gal_anim_with_cycle(gallery_elem);
     }
     fancybox();
+    resize_bada = function() {
+      if (navigator.userAgent.match(/Bada/)) {
+        return $("#container, body").width(360);
+      }
+    };
+    resize_bada();
     if (typeof google !== "undefined" && google !== null) {
       return google_map();
     }

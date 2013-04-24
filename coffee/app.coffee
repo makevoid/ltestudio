@@ -91,5 +91,12 @@ $ ->
     gal_anim_with_cycle gallery_elem
   
   fancybox()
-    
+  
+  resize_bada = ->
+    if navigator.userAgent.match(/Bada/)
+      $("#container, body").width(360) #480
+  
+  resize_bada()
+  
+      
   google_map() if google?
