@@ -24,7 +24,7 @@ section {
 
 @font-face {
   font-family: lithos_pro;
-  src: url("/fonts/lithos_pro.otf"); }
+  src: url("/fonts/lithos_pro.otf"), url("/fonts/lithos_pro.ttf"), url("/fonts/lithos_pro.svg") format("svg"), url("/fonts/lithos_pro.eot") format("embedded-opentype"), url("/fonts/lithos_pro.woff") format("woff"); }
 
 html, body {
   height: 100%; }
@@ -33,7 +33,7 @@ body {
   padding: 0;
   margin: 0;
   background: black;
-  font-family: sixcaps, lithos_pro, Helvetica, Verdana, Arial;
+  font-family: lithos_pro, Helvetica, Verdana, Arial;
   text-align: center;
   color: white; }
 
@@ -175,8 +175,7 @@ p {
     margin: 0 20px 0 10px;
     text-align: left;
     color: #fffeef;
-    letter-spacing: 0.1em;
-    font-family: lithos pro; }
+    letter-spacing: 0.1em; }
   .box_sinistra img {
     width: 40%;
     float: left;
@@ -255,7 +254,6 @@ h2 {
   margin: 0 0 0 20px; }
 
 .box_destra p {
-  font-family: lithos pro;
   font-size: 0.7em;
   text-align: left;
   margin: 0 20px 0 10px;
